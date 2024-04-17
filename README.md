@@ -1,37 +1,86 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
+# Weather Forecast
+
+> This is a weather forecast application built with Next.js and Axios. The application fetches weather data for a given city and allows the user to view the temperature in either Celsius or Fahrenheit. It also handles errors gracefully and provides feedback to the user when a city is not found or an error occurs.
+
+## Built With
+
+- Next.js
+- Axios
+- VSCode
 
 ## Getting Started
 
-First, run the development server:
+> This application fetches weather data for a given city and displays it to the user. The user can choose to view the temperature in Celsius or Fahrenheit. The application also handles errors, such as when the city is not found, and displays an appropriate error message to the user.
+
+To get a local copy up and running follow these simple example steps.
+
+## Prerequisites
+
+- Node.js installed on your local machine
+- NPM or Yarn to manage the packages
+
+## Setup
+
+Clone the repository to your local machine:
+
+```bash
+git clone https://github.com/moise-mulungu/weather-forecast
+```
+
+## Install
+
+Navigate to the project directory and install the dependencies:
+
+```bash
+cd weather-forecast
+npm install
+# or
+yarn install
+```
+
+## Usage
 
 ```bash
 npm run dev
 # or
 yarn dev
+```
+## Deployment
+
+To build the application for production, use the following command:
+
+```bash
+npm run build
 # or
-pnpm dev
-# or
-bun dev
+yarn build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Author
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+👤 **Moise Mulungu**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- GitHub: [@moise-mulungu](https://github.com/moise-mulungu)
+- Twitter: [@moise_mulungu](https://twitter.com/moise_mulungu)
+- LinkedIn: [Moïse (Musa) Mulungu](https://www.linkedin.com/in/moisemulungu/)
 
-## Learn More
+## 🤝 Contributing
 
-To learn more about Next.js, take a look at the following resources:
+Contributions, issues, and feature requests are welcome!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Feel free to check the [issues page](https://github.com/your-github-username/weather-forecast/issues).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Show your support
 
-## Deploy on Vercel
+Give a ⭐️ if you like this project!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Acknowledgments
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# weather-forecast
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
