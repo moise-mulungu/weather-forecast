@@ -47,6 +47,7 @@ npm run dev
 # or
 yarn dev
 ```
+
 ## Deployment
 
 To build the application for production, use the following command:
@@ -56,6 +57,8 @@ npm run build
 # or
 yarn build
 ```
+
+[live demo](https://weather-forecast-git-main-moisemulungus-projects.vercel.app/)
 
 ## Author
 
@@ -69,7 +72,7 @@ yarn build
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/your-github-username/weather-forecast/issues).
+Feel free to check the [issues page](https://github.com/moise-mulungu/weather-forecast/issues).
 
 ## Show your support
 
