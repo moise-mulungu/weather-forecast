@@ -1,4 +1,3 @@
-// import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Weather from './weather'
 import WeatherForecastFooter from './weather-forecast-footer'
@@ -19,4 +18,3 @@ const WeatherForecastContents = () => {
   )
 }
 export default WeatherForecastContents
-
