@@ -58,7 +58,7 @@ npm run build
 yarn build
 ```
 
-[live demo](https://weather-forecast-git-main-moisemulungus-projects.vercel.app/)
+[live demo](https://weather-forecast-pi-ten.vercel.app/)
 
 ## Author
 
