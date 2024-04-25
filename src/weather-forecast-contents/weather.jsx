@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import Loading from 'react-loading-components'
 
 const Weather = () => {
   const [weather, setWeather] = useState({})
@@ -7,6 +8,7 @@ const Weather = () => {
   const [modalOpen, setModalOpen] = useState(false)
   const [degree, setDegree] = useState('fahrenheit')
   const [errorMessage, setErrorMessage] = useState('')
+  const [isLoading, setIsLoading] = useState(false)
 
   useEffect(() => {
     fetchWeatherData()
@@ -16,6 +18,7 @@ const Weather = () => {
     console.log('city value:', { city })
 
     if (city) {
+      setIsLoading(true)
       try {
         const response = await axios.get(`/api/weather?city=${city}`)
 
@@ -41,6 +44,7 @@ const Weather = () => {
           setErrorMessage('The city name is not recognized. Please enter a valid name.')
         }
       }
+      setIsLoading(false)
       console.log('axios-value:', {
         axios,
       })
@@ -124,8 +128,9 @@ const Weather = () => {
           <div className={`fixed inset-12 grid place-items-center`}>
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <p className="text-gray-800 text-lg font-semibold mb-4">Weather Information</p>
-
-              {weather ? (
+              {isLoading ? (
+                <Loading type="ball_triangle" width={100} height={100} fill="#f44242" />
+              ) : weather ? (
                 <>
                   <p>Temperature: {calculatedTemp}</p>
                   <p>
